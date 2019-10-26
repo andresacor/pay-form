@@ -1,0 +1,294 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+h1, h2 {
+    color: #055DAD;
+}
+
+h3 {
+    color: #BFCDD9;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 1rem 0;
+}
+
+p {
+    color: #BFCDD9;
+    font-weight: normal;
+}
+
+input {
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    margin: auto;
+    color: #BFCDD9;
+    outline: 0;
+    border: 1px solid #BFCDD9;;
+    border-style: solid;
+}
+
+/* Eliminate the autocomplete */
+input::-webkit-input-placeholder {
+    color: #BFCDD9;
+    font-size: 15px;
+}
+
+
+/* Styles header */
+.header, .footer {
+    height: 60px;
+    background-color: #055DAD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-container-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.menu-link, span {
+    color: #fff;
+    padding: .3rem;
+}
+
+
+.form-container {
+    width: 90%;
+    margin: 4rem auto;
+}
+
+.title {
+    font-size: 24px;
+    margin-top: 6rem;
+}
+
+/* Styles form about */
+.container {
+    margin: 2rem 0;
+}
+
+
+/* Styles form selects */
+.form-control {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #BFCDD9;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    border-radius: 0;
+    color: #BFCDD9;
+    font-size: 15px;
+    font-weight: lighter;
+    outline: 0;
+    padding-left: .5rem;
+}
+
+.custom {
+    width: 48%;
+}
+
+/* Styles form buttons */
+.btn {
+    background-color: #FF632E;
+    border: 0;
+    margin-top: 3rem;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: #E14F1D; 
+    cursor: pointer;
+    
+}
+
+.btn.blue:hover {
+    background-color: #1571C4;
+    cursor: pointer;
+}
+
+.btn.blue {
+    background-color: #0084FB;
+}
+
+.radioButton {
+    width: 48%;
+    padding: 2rem 0;
+    border: 1px solid #BFCDD9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+[type="radio"] {
+    margin-left: 1rem;
+    width: auto;
+}
+
+
+.radioButton span {
+    color: #BFCDD9;
+    font-size: 14px;
+}
+
+.container-custom {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles payment type */
+.renewal {
+    font-size: 16px;
+    margin-top: 2rem;
+}
+
+.renewal span {
+    color: #BFCDD9;
+}
+
+/* Styles scheduled payment */
+
+table,
+th,
+td {
+    border: 1px solid #BFCDD9;
+    border-collapse: collapse;
+    padding: 1rem 0;
+    text-align: center;
+    color: #BFCDD9;
+}
+
+td {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+th {
+   color: #055DAD;
+   font-weight: bold;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+ .menu-container-footer {
+     height: 200px;
+ }
+
+
+/* tablet styles */
+@media(min-width:768px) {
+
+    .wrapper {
+        width: 50%;
+        margin: auto;
+    }
+
+ 
+    .form-container {
+        max-width: 600px;
+        margin: 0;
+    }
+
+    .menu-container {
+        margin: auto;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .menu-container-footer {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .btn {
+        width: 48%;
+        margin: 3rem auto;
+        font-size: 15px;
+    }
+
+    .custom {
+        width: 49.5%;
+    }
+
+    .buttons-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-container {
+        width: 50%;
+    } 
+
+
+
+  .menu-link {
+        padding-right: 1rem;
+
+    }
+
+}
