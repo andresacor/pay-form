@@ -94,12 +94,12 @@ input::-webkit-input-placeholder {
 
 .form-container {
     width: 90%;
-    margin: 4rem auto;
+    margin: 1rem auto;
 }
 
 .title {
     font-size: 24px;
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 /* Styles form about */
